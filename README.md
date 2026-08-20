@@ -1,38 +1,70 @@
-# atividade_web20ago
+# 📘 Guia de GitHub para quem nunca usou
 
-Exercício de introdução ao desenvolvimento web: uma página HTML com os elementos básicos
-(títulos, parágrafo, botão, campo de texto, link, imagem, listas e tabela), estilizada com CSS.
+Bem-vindo(a)! Este repositório é um guia em português para quem **nunca** mexeu com Git ou
+GitHub na vida. Não é preciso saber programar para entender: basta ler na ordem e ir fazendo junto.
 
-## Arquivos
+## Como usar este guia
 
-| Arquivo | Conteúdo |
-|---------|----------|
-| [index.html](index.html) | Estrutura da página |
-| [style.css](style.css) | Estilos da página |
-| [main.js](main.js) | Scripts (ainda vazio) |
+Leia um arquivo por vez, na ordem abaixo. Cada um leva de 5 a 15 minutos.
+Faça o exercício do final antes de passar para o próximo.
 
-## Como abrir
+| # | Arquivo | O que você aprende |
+|---|---------|--------------------|
+| 1 | [O que é Git e GitHub](01-o-que-e-git-e-github.md) | A ideia por trás de tudo, explicada sem termos técnicos |
+| 2 | [Instalação e conta](02-instalacao-e-conta.md) | Criar a conta e instalar os programas no seu computador |
+| 3 | [Seu primeiro repositório (pelo site)](03-primeiro-repositorio-no-site.md) | Criar e editar arquivos usando só o navegador |
+| 4 | [Usando no seu computador](04-usando-no-seu-computador.md) | Baixar, alterar e enviar arquivos (clone, add, commit, push) |
+| 5 | [Branches e Pull Request](05-branches-e-pull-request.md) | Trabalhar sem quebrar o projeto e em equipe |
+| 6 | [Erros comuns e como resolver](06-erros-comuns.md) | O que fazer quando aparece uma mensagem vermelha assustadora |
+| 7 | [Glossário](07-glossario.md) | Tradução de cada palavra estranha que você vai ouvir |
+| 8 | [Cola rápida](08-cola-rapida.md) | Uma página só com os comandos, para consultar sempre |
 
-Baixe ou clone o repositório e dê um duplo clique em `index.html` — ele abre no navegador.
+## Regra de ouro para iniciantes
+
+> **Você não vai quebrar nada.**
+> O Git guarda o histórico de tudo. Quase todo erro tem como voltar atrás.
+> Se travar, respire, leia a mensagem com calma e consulte o [arquivo 6](06-erros-comuns.md).
+
+## O caminho mais curto (se você tem pressa)
+
+1. Crie a conta: [arquivo 2](02-instalacao-e-conta.md)
+2. Crie um repositório e edite pelo site: [arquivo 3](03-primeiro-repositorio-no-site.md)
+3. Depois, quando estiver confortável, aprenda os comandos: [arquivo 4](04-usando-no-seu-computador.md)
+
+## Os 4 comandos do dia a dia
+
+Se você decorar só isto, já dá para trabalhar:
 
 ```bash
-git clone https://github.com/diogofvasconcelos/atividade_web20ago.git
+git pull
+```
+```bash
+git add .
+```
+```bash
+git commit -m "descrição do que mudou"
+```
+```bash
+git push
+```
+
+E, na dúvida sobre qualquer coisa:
+
+```bash
+git status
 ```
 
 ---
 
-## 📘 Guia de GitHub para iniciantes
+## Sobre este repositório
 
-Este repositório também traz um guia completo, em português, para quem **nunca usou Git ou
-GitHub**. Comece por aqui:
+Ele começou como uma atividade de HTML e CSS e virou o material do guia.
+Os arquivos daquela atividade (`index.html`, `style.css`, `main.js`) continuam guardados
+na branch **`qualidade`** — um exemplo real do que o [arquivo 5](05-branches-e-pull-request.md)
+explica sobre branches.
 
-### 👉 [guia-github/](guia-github/README.md)
+Para vê-los:
 
-1. [O que é Git e GitHub](guia-github/01-o-que-e-git-e-github.md)
-2. [Instalação e conta](guia-github/02-instalacao-e-conta.md)
-3. [Seu primeiro repositório (pelo site)](guia-github/03-primeiro-repositorio-no-site.md)
-4. [Usando no seu computador](guia-github/04-usando-no-seu-computador.md)
-5. [Branches e Pull Request](guia-github/05-branches-e-pull-request.md)
-6. [Erros comuns e como resolver](guia-github/06-erros-comuns.md)
-7. [Glossário](guia-github/07-glossario.md)
-8. [Cola rápida](guia-github/08-cola-rapida.md)
+```bash
+git switch qualidade
+```
